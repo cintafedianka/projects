@@ -1,0 +1,21 @@
+DISCRETE MATH DOCUMENTATION
+
+1. **Average (Mean)**:
+   - The code calculates the average \( \bar{y} \) of the y-coordinates of hand landmarks. This is done by summing up all the y-coordinates and dividing by the total number of landmarks.
+
+2. **Standard Deviation**:
+   - The standard deviation \( \sigma \) of the y-coordinates is calculated. Standard deviation measures the amount of variation or dispersion of a set of values. In this context, it helps determine the spread of y-coordinates of hand landmarks.
+
+3. **Logical Conditions**:
+   - Various logical conditions are used to recognize different hand gestures based on the positions of landmarks. For example, to recognize the letter 'A', the code checks if the thumb y-coordinate is less than the index finger y-coordinate, which is less than the middle finger y-coordinate, and so on.
+
+4. **If-else Statements**:
+   - The code uses if-else statements to determine the gesture based on the calculated values. For example, if the standard deviation of y-coordinates is less than a certain threshold, it's classified as a closed hand gesture. Otherwise, it proceeds to recognize specific gestures based on the positions of landmarks.
+
+5. **Image Manipulation**:
+   - The code involves manipulating images and frames using OpenCV. It reads frames from a camera, processes them to detect hand landmarks, and overlays the detected landmarks on a white background frame. Additionally, it loads an image and places it at the top-middle of the frame.
+
+6. **Looping and Control Flow**:
+   - The main function contains a while loop that continuously captures frames from the camera, processes them, and displays the results until the user presses the 'q' key to quit. This looping structure ensures continuous gesture recognition while the program is running.
+
+Overall, discrete mathematics concepts such as averaging, standard deviation, logical conditions, and control flow are used in combination with image processing techniques to recognize hand gestures based on landmark positions.
