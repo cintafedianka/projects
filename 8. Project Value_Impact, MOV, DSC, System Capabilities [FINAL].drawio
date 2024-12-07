@@ -1,0 +1,397 @@
+<mxfile host="app.diagrams.net" modified="2023-05-08T16:33:22.161Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="BHoKzWzpU0-FuKgpafi4" version="21.2.9" type="google">
+  <diagram name="Page-1" id="AG9s3_hrph6fw7zs52bv">
+    <mxGraphModel grid="0" page="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-1" value="&lt;b&gt;Potential Areas of Project Impact&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="215" y="40" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-2" value="Customer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-5" value="Operational" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="80" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="9Vlj9YoHVOZr3aTXAOV7-9" target="9Vlj9YoHVOZr3aTXAOV7-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="730" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-9" value="Impact" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9Vlj9YoHVOZr3aTXAOV7-10" target="9Vlj9YoHVOZr3aTXAOV7-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="870" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-10" value="Value" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9Vlj9YoHVOZr3aTXAOV7-11" target="9Vlj9YoHVOZr3aTXAOV7-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1010" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-11" value="Metric" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9Vlj9YoHVOZr3aTXAOV7-12" target="9Vlj9YoHVOZr3aTXAOV7-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1140" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-12" value="Time" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9Vlj9YoHVOZr3aTXAOV7-13" target="9Vlj9YoHVOZr3aTXAOV7-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1280" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-13" value="Verify" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-14" value="Summarize" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1356.04" y="368" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-21" value="&lt;b&gt;Measurable Objective Value&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="670" y="60" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-23" value="&lt;b&gt;Project Value&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1025.96" y="570.0000000000001" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-25" value="Project Value" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1085.96" y="686.0000000000001" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-26" value="Improved Work Visibility" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1085.96" y="600.0000000000001" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-28" value="Better Integration" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="666.0000000000001" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-29" value="Efficient Resource" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="759.0000000000001" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-30" value="Cost-Effective" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="997.96" y="671.0000000000001" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-31" value="Automated process" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1133.96" y="758.0000000000001" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-32" value="- 6 Months" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1204.52" y="280" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-35" value="- Inventory Turnover Ratio&lt;br&gt;- Work Performance Efficiency&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Sales Outcome&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1356.04" y="317.59000000000003" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-36" value="- Improved point of sale ordering time by 2 minutes&lt;br&gt;- Improved packaging and delivering of ingredients by 10 minutes" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1094.52" y="220" width="285.48" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-37" value="- Increase efficiency of resource&lt;br&gt;- Integrate work automation&lt;br&gt;- Improve work visbility" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="947.26" y="160" width="192.74" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-38" value="- Operational" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="804.52" y="110" width="125.48" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-39" value="By building an integrated inventory and POS system, resources and work can be automated efficiently with the visibility of work improved within the next 6 months" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1487" y="368" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-40" value="&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Increased number of sales&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="45" y="130" width="275" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="9Vlj9YoHVOZr3aTXAOV7-47" target="9Vlj9YoHVOZr3aTXAOV7-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="9Vlj9YoHVOZr3aTXAOV7-47" target="9Vlj9YoHVOZr3aTXAOV7-50">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="495" y="630.59" />
+              <mxPoint x="300" y="630.59" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="9Vlj9YoHVOZr3aTXAOV7-47" target="9Vlj9YoHVOZr3aTXAOV7-52">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="495" y="630.59" />
+              <mxPoint x="695" y="630.59" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="9Vlj9YoHVOZr3aTXAOV7-47" target="9Vlj9YoHVOZr3aTXAOV7-53">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="495" y="630.59" />
+              <mxPoint x="895" y="630.59" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-47" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Project&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: center; height: 2px;&quot;&gt;Inventory and Procurement Management Project&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="412.5" y="530" width="165" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-49" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Initialize and conceptualize&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: center; height: 2px;&quot;&gt;Project brief&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="45" y="658" width="140" height="72.59" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-50" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Project charter and plan&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: center; height: 2px;&quot;&gt;Project chart and project plan&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="230" y="658" width="140" height="72.59" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="9Vlj9YoHVOZr3aTXAOV7-51" target="9Vlj9YoHVOZr3aTXAOV7-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="9Vlj9YoHVOZr3aTXAOV7-51" target="9Vlj9YoHVOZr3aTXAOV7-60">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="495" y="760.5899999999999" />
+              <mxPoint x="300" y="760.5899999999999" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="9Vlj9YoHVOZr3aTXAOV7-51" target="9Vlj9YoHVOZr3aTXAOV7-59">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="495" y="760.5899999999999" />
+              <mxPoint x="115" y="760.5899999999999" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="9Vlj9YoHVOZr3aTXAOV7-51" target="9Vlj9YoHVOZr3aTXAOV7-62">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="495" y="760.5899999999999" />
+              <mxPoint x="695" y="760.5899999999999" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="9Vlj9YoHVOZr3aTXAOV7-51" target="9Vlj9YoHVOZr3aTXAOV7-63">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="495" y="760.5899999999999" />
+              <mxPoint x="895" y="760.5899999999999" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-51" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Execute and control&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: center; height: 2px;&quot;&gt;System development life cycle&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="425" y="658" width="140" height="72.59" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-52" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Close project&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: center; height: 2px;&quot;&gt;Final project report&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="625" y="658" width="140" height="72.59" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-53" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Evaluate project success&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: center; height: 2px;&quot;&gt;Project evaluation&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="825" y="658" width="140" height="72.59" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="9Vlj9YoHVOZr3aTXAOV7-47" target="9Vlj9YoHVOZr3aTXAOV7-49">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="505" y="610.59" as="sourcePoint" />
+            <mxPoint x="310" y="667.59" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="495" y="630.59" />
+              <mxPoint x="115" y="630.59" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-59" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Analysis&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: center; height: 2px;&quot;&gt;System Proposal and System Requirement&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="45" y="790.5899999999999" width="140" height="72.59" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-60" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Design&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: center; height: 2px;&quot;&gt;Technical Design and Product Design&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="230" y="790.5899999999999" width="140" height="72.59" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-61" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Construction&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: center; height: 2px;&quot;&gt;Inventory and Procurement Management System&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="412.5" y="790.59" width="165" height="72.59" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-62" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Testing&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: center; height: 2px;&quot;&gt;Usability Testing and A/B Testing&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="625" y="790.5899999999999" width="140" height="72.59" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-63" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Implementation&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: center; height: 2px; line-height: 120%;&quot;&gt;User Documentation and&amp;nbsp; Technical Report&lt;br&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="825" y="790.5899999999999" width="140" height="72.59" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-79" value="&lt;b&gt;Deliverable Structure Chart&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="395" y="500" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-83" value="&lt;ul&gt;&lt;li&gt;Efficient integrated process&lt;/li&gt;&lt;li&gt;Increase automation&lt;/li&gt;&lt;li&gt;Effective inventory monitoring&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="130" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-85" value="&lt;b&gt;Area of Impact&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="309.99999999999994" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-86" value="&lt;b&gt;The project will be succesful if&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="309.99999999999994" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-87" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Customer&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="80" y="347.59" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-88" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Operational&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="80" y="387.59" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-90" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Within 6 months, 90% of our customers will be satisfied with their order&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="260" y="339.99999999999994" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-92" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Our inventory turnover ration will improve 25% by the end of the six months.&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="260" y="387.59" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-94" value="&lt;b&gt;System Capabilities&lt;br&gt;&lt;/b&gt;&lt;ul style=&quot;&quot;&gt;&lt;li style=&quot;&quot;&gt;Perform automated email orders for supply of ingredients&lt;/li&gt;&lt;li style=&quot;&quot;&gt;Maintain database and history information of orders and inventory&lt;/li&gt;&lt;li style=&quot;&quot;&gt;Support real-time update of inventory tracking&lt;/li&gt;&lt;li style=&quot;&quot;&gt;Integrate supply chain management system to monitor inventory purchasing and stocking&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1290" y="630" width="420" height="152.41" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-95" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="9Vlj9YoHVOZr3aTXAOV7-96" target="9Vlj9YoHVOZr3aTXAOV7-98">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1710" y="91" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-96" value="Impact" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1650" y="1" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-97" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9Vlj9YoHVOZr3aTXAOV7-98" target="9Vlj9YoHVOZr3aTXAOV7-100">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1850" y="151" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-98" value="Value" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1790" y="61" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9Vlj9YoHVOZr3aTXAOV7-100" target="9Vlj9YoHVOZr3aTXAOV7-102">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1990" y="211" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-100" value="Metric" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1930" y="121" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-101" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9Vlj9YoHVOZr3aTXAOV7-102" target="9Vlj9YoHVOZr3aTXAOV7-104">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2120" y="261" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-102" value="Time" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2060" y="181" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-103" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9Vlj9YoHVOZr3aTXAOV7-104" target="9Vlj9YoHVOZr3aTXAOV7-105">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2260" y="291" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-104" value="Verify" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2200" y="221" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-105" value="Summarize" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2336.04" y="269" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-106" value="&lt;b&gt;Measurable Objective Value&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1650" y="-39" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-107" value="- 6 Months" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2184.52" y="181" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-108" value="- Sales Report" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2330" y="221" width="213" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-109" value="- Improved number of sales by 20%" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2074.52" y="121" width="285.48" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-110" value="- Increase number of sales daily" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1927.26" y="61" width="192.74" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-111" value="- Customer" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1784.52" y="11" width="125.48" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9Vlj9YoHVOZr3aTXAOV7-112" value="By building an integrated inventory, the number of sales will be maximized and increased immensely" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2467" y="269" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="x-LxqacFc7u7XSi_28o6-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="x-LxqacFc7u7XSi_28o6-2" target="x-LxqacFc7u7XSi_28o6-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2210" y="610" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x-LxqacFc7u7XSi_28o6-2" value="Impact" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2150" y="520" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="x-LxqacFc7u7XSi_28o6-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="x-LxqacFc7u7XSi_28o6-4" target="x-LxqacFc7u7XSi_28o6-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2350" y="670" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x-LxqacFc7u7XSi_28o6-4" value="Value" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2290" y="580" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="x-LxqacFc7u7XSi_28o6-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="x-LxqacFc7u7XSi_28o6-6" target="x-LxqacFc7u7XSi_28o6-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2490" y="730" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x-LxqacFc7u7XSi_28o6-6" value="Metric" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2430" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="x-LxqacFc7u7XSi_28o6-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="x-LxqacFc7u7XSi_28o6-8" target="x-LxqacFc7u7XSi_28o6-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2620" y="780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x-LxqacFc7u7XSi_28o6-8" value="Time" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2560" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="x-LxqacFc7u7XSi_28o6-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="x-LxqacFc7u7XSi_28o6-10" target="x-LxqacFc7u7XSi_28o6-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2760" y="810" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x-LxqacFc7u7XSi_28o6-10" value="Verify" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2700" y="740" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="x-LxqacFc7u7XSi_28o6-11" value="Summarize" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2836.04" y="788" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="x-LxqacFc7u7XSi_28o6-12" value="&lt;b&gt;Measurable Objective Value&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2150" y="480" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="x-LxqacFc7u7XSi_28o6-13" value="- 6 Months" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2687.26" y="707.59" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="x-LxqacFc7u7XSi_28o6-14" value="- Inventory Turnover Ratio&lt;br&gt;- Increased Work Performance Efficiency by 85%" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2836.04" y="737.59" width="283.96" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="x-LxqacFc7u7XSi_28o6-15" value="- Halves the inventory tracking time&lt;br&gt;- Improved sales calculation algorithm&lt;br&gt;- Daily delivery speed increased by 20%" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2574.52" y="640" width="285.48" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="x-LxqacFc7u7XSi_28o6-16" value="- Increase efficiency of resource&lt;br&gt;- Integrate work automation&lt;br&gt;- Improve work flow" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2427.26" y="580" width="192.74" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="x-LxqacFc7u7XSi_28o6-17" value="- Operational" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2284.52" y="530" width="125.48" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="x-LxqacFc7u7XSi_28o6-18" value="By building a digitized inventory and live location tracking system, resources and work can be automated efficiently with the visibility of work improved within the next 6 months" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2967" y="788" width="230" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
