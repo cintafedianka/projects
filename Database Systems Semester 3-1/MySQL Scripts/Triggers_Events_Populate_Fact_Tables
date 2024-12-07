@@ -1,0 +1,107 @@
+/* Triggers and Events to populate fact tables */
+
+/* Create trigger to populate hotel_room_price_change_fact */
+-- Populate on update
+USE tuju_database;
+
+DROP TRIGGER IF EXISTS hotel_room_price_change_fact_on_update;
+
+DELIMITER $$
+
+CREATE TRIGGER hotel_room_price_change_fact_on_update
+    AFTER UPDATE
+    ON tuju_database.hotel_room_type FOR EACH ROW
+BEGIN
+    IF OLD.roomPrice <> new.roomPrice THEN
+
+    INSERT INTO tuju_dw.hotel_room_price_change_fact(timecode, hotelRoomTypeID, outletID, updatedPrice)
+    VALUES(DATE_FORMAT(NOW(), "%Y%m%d"), new.hotelRoomTypeID, new.outletID, new.roomPrice);
+    END IF;
+END$$
+DELIMITER ;
+
+-- Populate on insert to track initial price aswell
+USE tuju_database;
+
+DROP TRIGGER IF EXISTS hotel_room_price_change_fact_on_insert;
+
+DELIMITER $$
+
+CREATE TRIGGER hotel_room_price_change_fact_on_insert
+    AFTER INSERT
+    ON tuju_database.hotel_room_type FOR EACH ROW
+BEGIN
+    INSERT INTO tuju_dw.hotel_room_price_change_fact(timecode, hotelRoomTypeID, outletID, updatedPrice)
+    VALUES(DATE_FORMAT(NOW(), "%Y%m%d"), new.hotelRoomTypeID, new.outletID, new.roomPrice);
+END$$
+DELIMITER ;
+
+
+/* Create trigger to populate special_room_price_change_fact */ 
+-- Populate on update
+DROP TRIGGER IF EXISTS special_room_price_change_fact_on_update;
+
+DELIMITER $$
+
+CREATE TRIGGER special_room_price_change_fact_on_update
+    AFTER UPDATE
+    ON tuju_database.special_room_type FOR EACH ROW
+BEGIN
+    IF OLD.price <> new.price THEN
+
+    INSERT INTO tuju_dw.special_room_price_change_fact(timecode, specialRoomTypeID, outletID, updatedPrice)
+    VALUES(DATE_FORMAT(NOW(), "%Y%m%d"), new.specialRoomTypeID, new.outletID, new.price);
+    END IF;
+END$$
+DELIMITER ;
+
+-- Populate on insert to track initial price aswell
+DROP TRIGGER IF EXISTS special_room_price_change_fact_on_insert;
+
+DELIMITER $$
+
+CREATE TRIGGER special_room_price_change_fact_on_insert
+    AFTER INSERT
+    ON tuju_database.special_room_type FOR EACH ROW
+BEGIN
+    INSERT INTO tuju_dw.special_room_price_change_fact(timecode, specialRoomTypeID, outletID, updatedPrice)
+    VALUES(DATE_FORMAT(NOW(), "%Y%m%d"), new.specialRoomTypeID, new.outletID, new.price);
+END$$
+DELIMITER ;
+
+
+/* Create trigger to populate customer_payments_fact */ 
+DROP TRIGGER IF EXISTS customer_payments_fact_on_insert 
+
+DELIMITER $$
+
+CREATE TRIGGER customer_payments_fact_on_insert
+    AFTER INSERT
+    ON tuju_database.payment FOR EACH ROW
+BEGIN
+    DECLARE thisCustomerID INT;
+
+    SET thisCustomerID = (SELECT customerID FROM tuju_database.reservation
+                                            WHERE tuju_database.reservation.reservationID = new.reservationID);
+    
+    INSERT INTO tuju_dw.customer_payments_fact(timecode, customerID, paymentTypeID, totalPaid)
+    VALUES(DATE_FORMAT(NOW(), "%Y%m%d"), thisCustomerID, new.paymentTypeID, new.totalPaid);
+
+END $$
+DELIMITER ;
+
+/* Create event to populate special_room_price_change_fact_archive daily */
+DROP EVENT IF EXISTS scheduler_archive_special_price_change_fact;
+CREATE EVENT IF NOT EXISTS scheduler_archive_special_price_change_fact
+ON SCHEDULE EVERY 1 DAY
+STARTS CURRENT_TIMESTAMP + INTERVAL 10 SECOND
+DO
+    CALL archive_special_room_price_change_fact();
+
+SET GLOBAL event_scheduler = OFF;
+
+
+
+
+
+    

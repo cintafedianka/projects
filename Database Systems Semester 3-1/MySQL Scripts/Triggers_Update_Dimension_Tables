@@ -1,0 +1,154 @@
+/* Create triggers to update dimension tables */
+------------------------------------------------
+
+/* Trigger to update customer_dimension after insert */
+DROP TRIGGER IF EXISTS update_customer_dimension_after_insert;
+DELIMITER $$
+CREATE TRIGGER update_customer_dimension_after_insert AFTER INSERT ON tuju_database.customer FOR EACH ROW
+BEGIN
+
+    INSERT INTO tuju_dw.customer_dimension (customerID, customerName, phoneNumber, emailAddress, userName, password)
+    VALUES (NEW.customerID, NEW.customerName, NEW.phoneNumber, NEW.emailAddress, NEW.userName, NEW.password);
+
+END$$
+DELIMITER ;
+
+/* Trigger to update customer_dimension after update */
+DROP TRIGGER IF EXISTS update_customer_dimension_after_update;
+DELIMITER $$
+CREATE TRIGGER update_customer_dimension_after_update AFTER UPDATE ON tuju_database.customer FOR EACH ROW
+BEGIN
+
+    UPDATE tuju_dw.customer_dimension
+        SET tuju_dw.customer_dimension.customerName = NEW.customerName,
+            tuju_dw.customer_dimension.phoneNumber = NEW.phoneNumber,
+            tuju_dw.customer_dimension.emailAddress = NEW.emailAddress,
+            tuju_dw.customer_dimension.userName = NEW.userName,
+            tuju_dw.customer_dimension.password = NEW.password
+        WHERE tuju_dw.customer_dimension.customerID = NEW.customerID;
+
+END$$
+DELIMITER ;
+
+---
+
+/* Trigger to update outlet_dimension after insert */
+DROP TRIGGER IF EXISTS update_outlet_dimension_after_insert;
+DELIMITER $$
+CREATE TRIGGER update_outlet_dimension_after_insert AFTER INSERT ON tuju_database.outlet FOR EACH ROW
+BEGIN
+
+    INSERT INTO tuju_dw.outlet_dimension(outletID, outletName, outletPhoneNumber, location)
+    VALUES (NEW.outletID, NEW.outletName, NEW.outletPhoneNumber, NEW.location);
+
+END$$
+DELIMITER ;
+
+/* Trigger to update outlet_dimension after update */
+DROP TRIGGER IF EXISTS update_outlet_dimension_after_update;
+DELIMITER $$
+CREATE TRIGGER update_outlet_dimension_after_update AFTER UPDATE ON tuju_database.outlet FOR EACH ROW
+BEGIN
+
+    UPDATE tuju_dw.outlet_dimension
+        SET tuju_dw.outlet_dimension.outletName = NEW.outletName,
+            tuju_dw.outlet_dimension.outletPhoneNumber = NEW.outletPhoneNumber,
+            tuju_dw.outlet_dimension.location = NEW.location
+        WHERE tuju_dw.outlet_dimension.outletID = NEW.outletID;
+
+END$$
+DELIMITER ;
+
+---
+
+/* Trigger to update payment_type_dimension after insert */
+DROP TRIGGER IF EXISTS update_payment_type_dimension_after_insert;
+DELIMITER $$
+CREATE TRIGGER update_payment_type_dimension_after_insert AFTER INSERT ON tuju_database.payment_type FOR EACH ROW
+BEGIN
+
+    INSERT INTO tuju_dw.payment_type_dimension(paymentTypeID, typeName)
+    VALUES (NEW.paymentTypeID, NEW.typeName);
+
+END$$
+DELIMITER ;
+
+/* Trigger to update payment_type_dimension after update */
+DROP TRIGGER IF EXISTS update_payment_type_dimension_after_update;
+DELIMITER $$
+CREATE TRIGGER update_payment_type_dimension_after_update AFTER UPDATE ON tuju_database.payment_type FOR EACH ROW
+BEGIN
+
+    UPDATE tuju_dw.payment_type_dimension
+        SET tuju_dw.payment_type_dimension.typeName = NEW.typeName,
+        WHERE tuju_dw.payment_type_dimension.paymentTypeID = NEW.paymentTypeID;
+
+END$$
+DELIMITER ;
+
+---
+
+/* Trigger to update special_room_type_dimension after insert */
+DROP TRIGGER IF EXISTS update_special_room_type_dimension_after_insert;
+DELIMITER $$
+CREATE TRIGGER update_special_room_type_dimension_after_insert AFTER INSERT ON tuju_database.special_room_type FOR EACH ROW
+BEGIN
+
+    INSERT INTO tuju_dw.special_room_type_dimension(specialRoomTypeID, specialRoomTypeName, capacity, price, priceType, serviceCharge, fnbincluded, outletID, roomImage)
+    VALUES (NEW.specialRoomTypeID, NEW.specialRoomTypeName, NEW.capacity, NEW.price, NEW.priceType, NEW.serviceCharge, NEW.fnbincluded, NEW.outletID, NEW.roomImage);
+
+END$$
+DELIMITER ;
+
+/* Trigger to update special_room_type_dimension after update */
+DROP TRIGGER IF EXISTS update_special_room_type_dimension_after_update;
+DELIMITER $$
+CREATE TRIGGER update_special_room_type_dimension_after_update AFTER UPDATE ON tuju_database.special_room_type FOR EACH ROW
+BEGIN
+
+    UPDATE tuju_dw.special_room_type_dimension
+        SET
+            tuju_dw.special_room_type_dimension.specialRoomTypeName = NEW.specialRoomTypeName,
+            tuju_dw.special_room_type_dimension.capacity = NEW.capacity,
+            tuju_dw.special_room_type_dimension.price = NEW.price,
+            tuju_dw.special_room_type_dimension.priceType = NEW.priceType,
+            tuju_dw.special_room_type_dimension.serviceCharge = NEW.serviceCharge,
+            tuju_dw.special_room_type_dimension.fnbincluded = NEW.fnbincluded,
+            tuju_dw.special_room_type_dimension.outletID = NEW.outletID,
+            tuju_dw.special_room_type_dimension.roomImage = NEW.roomImage
+        WHERE tuju_dw.special_room_type_dimension.specialRoomTypeID = NEW.specialRoomTypeID;
+
+END$$
+DELIMITER ;
+
+---
+
+/* Trigger to update hotel_room_type_dimension after insert */
+DROP TRIGGER IF EXISTS update_hotel_room_type_dimension_after_insert;
+DELIMITER $$
+CREATE TRIGGER update_hotel_room_type_dimension_after_insert AFTER INSERT ON tuju_database.hotel_room_type FOR EACH ROW
+BEGIN
+
+    INSERT INTO tuju_dw.hotel_room_type_dimension (hotelRoomTypeID, hotelRoomTypeName, maxOccupancy, roomPrice, breakfastIncluded, outletID, roomImage)
+    VALUES (NEW.hotelRoomTypeID, NEW.hotelRoomTypeName, NEW.maxOccupancy, NEW.roomPrice, NEW.breakfastIncluded, NEW.outletID, NEW.roomImage);
+
+END$$
+DELIMITER ;
+
+/* Trigger to update hotel_room_type_dimension after update */
+DROP TRIGGER IF EXISTS update_hotel_room_type_dimension_after_update;
+DELIMITER $$
+CREATE TRIGGER update_hotel_room_type_dimension_after_update AFTER UPDATE ON tuju_database.hotel_room_type FOR EACH ROW
+BEGIN
+
+    UPDATE tuju_dw.hotel_room_type_dimension
+        SET tuju_dw.hotel_room_type_dimension.hotelRoomTypeName = NEW.hotelRoomTypeName,
+            tuju_dw.hotel_room_type_dimension.maxOccupancy = NEW.maxOccupancy,
+            tuju_dw.hotel_room_type_dimension.roomPrice = NEW.roomPrice,
+            tuju_dw.hotel_room_type_dimension.breakfastIncluded = NEW.breakfastIncluded,
+            tuju_dw.hotel_room_type_dimension.outletID = NEW.outletID,
+            tuju_dw.hotel_room_type_dimension.roomImage = NEW.roomImage
+        WHERE tuju_dw.hotel_room_type_dimension.hotelRoomTypeID = NEW.hotelRoomTypeID;
+
+END$$
+DELIMITER ;

@@ -1,0 +1,113 @@
+/* Create Data Warehouse */
+DROP DATABASE IF EXISTS tuju_dw;
+CREATE DATABASE IF NOT EXISTS tuju_dw;
+
+/* Use the created schema to create tables and triggers */
+USE tuju_dw;
+
+/* Create dimension tables (6) */
+
+/* Create time_dimension table */
+DROP TABLE IF EXISTS time_dimension;
+CREATE TABLE time_dimension (
+        id                      INTEGER PRIMARY KEY,  -- year*10000+month*100+day
+        db_date                 DATE NOT NULL,
+        year                    INTEGER NOT NULL,
+        month                   INTEGER NOT NULL, -- 1 to 12
+        day                     INTEGER NOT NULL, -- 1 to 31
+        quarter                 INTEGER NOT NULL, -- 1 to 4
+        week                    INTEGER NOT NULL, -- 1 to 52/53
+        day_name                VARCHAR(9) NOT NULL, -- 'Monday', 'Tuesday'...
+        month_name              VARCHAR(9) NOT NULL, -- 'January', 'February'...
+        holiday_flag            CHAR(1) DEFAULT 'f' CHECK (holiday_flag in ('t', 'f')),
+        weekend_flag            CHAR(1) DEFAULT 'f' CHECK (weekend_flag in ('t', 'f')),
+        UNIQUE td_ymd_idx (year,month,day),
+        UNIQUE td_dbdate_idx (db_date)
+);
+
+
+/* Create hotel_room_type_dimension table */
+DROP TABLE IF EXISTS hotel_room_type_dimension;
+CREATE TABLE IF NOT EXISTS hotel_room_type_dimension LIKE tuju_database.hotel_room_type;
+INSERT INTO hotel_room_type_dimension SELECT * FROM tuju_database.hotel_room_type;
+
+/* Create outlet_dimension table */
+DROP TABLE IF EXISTS outlet_dimension;
+CREATE TABLE IF NOT EXISTS outlet_dimension LIKE tuju_database.outlet;
+INSERT INTO outlet_dimension SELECT * FROM tuju_database.outlet;
+
+/* Create special_room_type_dimension table */
+DROP TABLE IF EXISTS special_room_type_dimension;
+CREATE TABLE IF NOT EXISTS special_room_type_dimension LIKE tuju_database.special_room_type;
+INSERT INTO special_room_type_dimension SELECT * FROM tuju_database.special_room_type;
+
+/* Create customer_dimension table */
+DROP TABLE IF EXISTS customer_dimension;
+CREATE TABLE IF NOT EXISTS customer_dimension LIKE tuju_database.customer;
+INSERT INTO customer_dimension SELECT * FROM tuju_database.customer;
+
+/* Create payment_type_dimension table */
+DROP TABLE IF EXISTS payment_type_dimension;
+CREATE TABLE IF NOT EXISTS payment_type_dimension LIKE tuju_database.payment_type;
+INSERT INTO payment_type_dimension SELECT * FROM tuju_database.payment_type;
+
+/* Create fact tables (5) */
+
+/* Create hotel_room_price_change_fact table */
+CREATE TABLE IF NOT EXISTS hotel_room_price_change_fact (
+    timecode INT NOT NULL,
+    hotelRoomTypeID INT NOT NULL,
+    outletID INT NOT NULL,
+    updatedPrice DOUBLE NOT NULL,
+    PRIMARY KEY(timecode, hotelRoomTypeID, outletID),
+    FOREIGN KEY(timecode) REFERENCES time_dimension(id),
+    FOREIGN KEY(hotelRoomTypeID) REFERENCES hotel_room_type_dimension(hotelRoomTypeID),
+    FOREIGN KEY(outletID) REFERENCES outlet_dimension(outletID)
+);
+
+/* Create special_room_price_change_fact */
+CREATE TABLE IF NOT EXISTS special_room_price_change_fact (
+    timecode INT NOT NULL,
+    specialRoomTypeID INT NOT NULL,
+    outletID INT NOT NULL,
+    updatedPrice DOUBLE NOT NULL,
+    PRIMARY KEY (timecode, specialRoomTypeID, outletID),
+    FOREIGN KEY(timecode) REFERENCES time_dimension(id),
+    FOREIGN KEY(specialRoomTypeID) REFERENCES special_room_type_dimension(specialRoomTypeID),
+    FOREIGN KEY(outletID) REFERENCES outlet_dimension(outletID)
+);
+
+/* Create customer_payments_fact */
+CREATE TABLE IF NOT EXISTS customer_payments_fact (
+    timecode INT NOT NULL,
+    customerID INT NOT NULL,
+    paymentTypeID INT NOT NULL,
+    totalPaid DOUBLE NOT NULL,
+    PRIMARY KEY(timecode, customerID, paymentTypeID),
+    FOREIGN KEY(timecode) REFERENCES time_dimension(id),
+    FOREIGN KEY(customerID) REFERENCES customer_dimension(customerID),
+    FOREIGN KEY(paymentTypeID) REFERENCES payment_type_dimension(paymentTypeID)
+);
+
+/* Create hotelroom_occupancy_fact */
+CREATE TABLE IF NOT EXISTS hotel_room_occupancy_fact (
+    timecode INT NOT NULL,
+    outletID INT NOT NULL,
+    totalOccupiedQty INT NOT NULL,
+    PRIMARY KEY (timecode, outletID),
+    FOREIGN KEY(timecode) REFERENCES time_dimension(id),
+    FOREIGN KEY(outletID) REFERENCES outlet_dimension(outletID)
+);
+
+/* Create special_room_occupancy_fact */
+CREATE TABLE IF NOT EXISTS special_room_occupancy_fact (
+    timecode INT NOT NULL,
+    outletID INT NOT NULL,
+    totalOccupiedQty INT NOT NULL,
+    PRIMARY KEY (timecode, outletID),
+    FOREIGN KEY(timecode) REFERENCES time_dimension(id),
+    FOREIGN KEY(outletID) REFERENCES outlet_dimension(outletID)
+);
+
+/* Create a sample archive table for special_room_occupancy_fact table */
+CREATE TABLE IF NOT EXISTS special_room_price_change_fact_archive LIKE special_room_price_change_fact;
